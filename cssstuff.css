@@ -1,0 +1,116 @@
+/* Borders */
+.border-example {
+    border: 2px solid #999;
+    border-radius: 5px;
+  }
+  
+  /* Shadows */
+  .box-shadow-example {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Text Styling */
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+  
+  .text-italic {
+    font-style: italic;
+  }
+  
+  /* Lists */
+  ul {
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+  
+  ol {
+    list-style-type: decimal;
+    list-style-position: outside;
+  }
+  
+  /* Floats and Clearing */
+  .float-left {
+    float: left;
+    margin-right: 10px;
+  }
+  
+  .float-right {
+    float: right;
+    margin-left: 10px;
+  }
+  
+  .clear-fix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Visibility */
+  .hidden-element {
+    display: none;
+  }
+  
+  /* Opacity */
+  .opacity-example {
+    opacity: 0.7;
+  }
+  
+  /* Overflow */
+  .overflow-example {
+    overflow: scroll;
+  }
+  
+  /* Text Alignment */
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Font */
+  .custom-font {
+    font-family: 'Open Sans', Arial, sans-serif;
+  }
+  
+  /* Animation */
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotate-animation {
+    animation: rotate 2s linear infinite;
+  }
+  
+  /* Flexbox */
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Grid */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  /* Transitions */
+  .transition-example {
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .responsive-text {
+      font-size: 14px;
+    }
+  
+    .responsive-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
