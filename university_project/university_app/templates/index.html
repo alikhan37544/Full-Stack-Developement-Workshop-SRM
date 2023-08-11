@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'academics' %}">Academics</a></li>
+            <li><a href="{% url 'research' %}">Research</a></li>
+            <li><a href="{% url 'campus_life' %}">Campus Life</a></li>
+            <li><a href="{% url 'international' %}">International</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'controller_of_examinations' %}">Controller of Examinations</a></li>
+            <li><a href="{% url 'department_finder' %}">Department Finder</a></li>
+            <li><a href="{% url 'staff_finder' %}">Staff Finder</a></li>
+            <li><a href="{% url 'program_finder' %}">Program Finder</a></li>
+            <li><a href="{% url 'news' %}">News</a></li>
+        </ul>
+    </nav>
+
+    {% if user.is_authenticated %}
+        <p>Hello, {{ user.username }}!</p>
+        <!-- Display user-specific content here -->
+        <!-- Example: <p><a href="{% url 'profile' %}">Profile</a></p> -->
+        <!-- Include links to user-related pages or actions -->
+    {% else %}
+        <p>You are not logged in.</p>
+        <!-- Display content for anonymous users here -->
+        <!-- Example: <p><a href="{% url 'login' %}">Login</a></p> -->
+        <!-- Include links to login or registration pages -->
+    {% endif %}
+</body>
+</html>
